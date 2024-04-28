@@ -81,7 +81,7 @@ end
 -- get the args for opening the webbrowser
 local function get_open_browser_args(args)
   if sysname == "Windows_NT" then
-    local win_args = { "start", "explorer.exe" }
+    local win_args = { "start", "firefox.exe" }
     return helper.concat_tables(win_args, args)
   end
   return args
